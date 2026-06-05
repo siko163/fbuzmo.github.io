@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакты — ФБУЗ ЦГИЭ в Мурманской области</title>
+<link rel="icon" href="assets/logo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="kontakty">
+
+<div id="site-top"></div>
+
+<div class="page-head"><div class="container">
+  <div class="breadcrumb"><a href="index.html">Главная</a> / Контакты</div>
+  <h1>Контакты</h1>
+</div></div>
+
+<section>
+  <div class="container">
+    <div class="info-row">
+      <div class="info-block">
+        <h2>Как с нами связаться</h2>
+        <div class="contacts-grid">
+          <div class="contact-item"><span class="contact-icon">📍</span><div><strong>Адрес</strong><span data-bind="address"></span></div></div>
+          <div class="contact-item"><span class="contact-icon">📞</span><div><strong>Телефон</strong><a data-bind="phone"></a></div></div>
+          <div class="contact-item"><span class="contact-icon">✉️</span><div><strong>Email</strong><a data-bind="email"></a></div></div>
+          <div class="contact-item"><span class="contact-icon">🕒</span><div><strong>Часы работы</strong><span data-bind="hours"></span></div></div>
+          <div class="contact-item"><span class="contact-icon">💬</span><div><strong>ВКонтакте</strong><a data-bind="vkUrl" target="_blank" rel="noopener">Наше сообщество</a></div></div>
+          <div class="contact-item"><span class="contact-icon">🌐</span><div><strong>Сайт</strong><span data-bind="siteName"></span></div></div>
+        </div>
+        <p style="margin-top:22px"><a class="btn-call" data-bind="vkUrl" target="_blank" rel="noopener" style="margin-top:0">Записаться онлайн</a></p>
+      </div>
+      <div class="info-block">
+        <h2>Приём заявок на дезинфекцию</h2>
+        <p style="color:var(--text-muted);font-size:14.5px">Дератизация, дезинсекция, дезинфекция и акарицидная обработка.</p>
+        <div class="contact-item" style="margin-top:16px"><span class="contact-icon">📞</span><div><strong>Отдел дезинфекции</strong><span>8 (8152) 47-37-98, доб. 5</span></div></div>
+        <p style="margin-top:14px;color:var(--text-muted);font-size:13px">Лицензия на дезинфекционную деятельность № 51.01.04003.Л.000002.10.24 от 14.10.2024 г.</p>
+      </div>
+    </div>
+
+    <iframe class="map-frame" loading="lazy" title="Карта проезда"
+      src="https://yandex.ru/map-widget/v1/?mode=search&text=%D0%9C%D1%83%D1%80%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9A%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D1%8B%2C%2011&z=16"></iframe>
+  </div>
+</section>
+
+<section class="hotlines-bg" style="padding:40px 0;">
+  <div class="container">
+    <div class="hotlines-inner">
+      <h2>Горячие линии</h2>
+      <div class="hl-cards" id="hotlines"></div>
+    </div>
+  </div>
+</section>
+
+<div id="site-bottom"></div>
+
+<script src="assets/content.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

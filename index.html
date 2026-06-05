@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ФБУЗ «Центр гигиены и эпидемиологии в Мурманской области»</title>
+<meta name="description" content="Аккредитованная организация Роспотребнадзора в Мурманской области: лабораторные исследования, медицинские книжки, справки, дезинфекция, гигиеническая подготовка.">
+<link rel="icon" href="assets/logo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="home">
+
+<div id="site-top"></div>
+
+<!-- HERO -->
+<section class="hero" style="padding-bottom:80px;">
+  <div class="hero-content">
+    <h1>Центр гигиены<br>и эпидемиологии <span>в Мурманской области</span></h1>
+    <p>Лабораторные исследования, медицинские книжки, справки, дезинфекция и профессиональная гигиеническая подготовка. Аккредитованная организация Роспотребнадзора.</p>
+    <div class="hero-btns">
+      <a class="btn-primary" data-bind="vkUrl" target="_blank" rel="noopener">Записаться на услугу</a>
+      <a class="btn-secondary" href="uslugi.html">Услуги и прейскурант</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK ACTIONS -->
+<div class="quick-actions">
+  <div class="qa-grid">
+    <a class="qa-card" data-bind="vkUrl" target="_blank" rel="noopener"><span class="qa-icon">📝</span><span class="qa-text"><strong>Запись на приём</strong><span>Онлайн или по телефону</span></span></a>
+    <a class="qa-card" href="dokumenty.html"><span class="qa-icon">📄</span><span class="qa-text"><strong>Документы и формы</strong><span>Заявления, бланки, образцы</span></span></a>
+    <a class="qa-card" href="uslugi.html"><span class="qa-icon">💰</span><span class="qa-text"><strong>Услуги и цены</strong><span>Актуальный прейскурант</span></span></a>
+    <a class="qa-card" href="kontakty.html"><span class="qa-icon">📍</span><span class="qa-text"><strong>Адреса и часы работы</strong><span>г. Мурманск и область</span></span></a>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-bg" style="padding-top:56px;">
+  <div class="container">
+    <div class="title-row">
+      <div><h2 class="section-title">Наши услуги</h2><p class="section-subtitle" style="margin-bottom:0">Полный спектр санитарно-эпидемиологических услуг</p></div>
+      <a class="link-more" href="uslugi.html">Все услуги и прейскурант →</a>
+    </div>
+    <div class="services-grid" id="services-grid"></div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="news-bg">
+  <div class="container">
+    <div class="title-row">
+      <div><h2 class="section-title">Новости и объявления</h2><p class="section-subtitle" style="margin-bottom:0">Актуальные события и важная информация</p></div>
+      <a class="link-more" href="novosti.html">Все новости →</a>
+    </div>
+    <div class="news-grid" id="news-grid" data-limit="3"></div>
+  </div>
+</section>
+
+<!-- DOCS + CONTACTS PREVIEW -->
+<section>
+  <div class="container">
+    <div class="info-row">
+      <div class="info-block reveal">
+        <h2>📄 Документы и формы</h2>
+        <div id="doc-list"></div>
+        <p style="margin-top:18px"><a class="link-more" href="dokumenty.html">Все документы →</a></p>
+      </div>
+      <div class="info-block reveal">
+        <h2>📍 Контакты</h2>
+        <div class="contacts-grid">
+          <div class="contact-item"><span class="contact-icon">📍</span><div><strong>Главный офис</strong><span data-bind="address"></span></div></div>
+          <div class="contact-item"><span class="contact-icon">📞</span><div><strong>Телефон</strong><a data-bind="phone"></a></div></div>
+          <div class="contact-item"><span class="contact-icon">✉️</span><div><strong>Email</strong><a data-bind="email"></a></div></div>
+          <div class="contact-item"><span class="contact-icon">🕒</span><div><strong>Часы работы</strong><span data-bind="hours"></span></div></div>
+        </div>
+        <p style="margin-top:18px"><a class="link-more" href="kontakty.html">Подробные контакты и карта →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOTLINES -->
+<section class="hotlines-bg" style="padding:36px 0;">
+  <div class="container">
+    <div class="hotlines-inner">
+      <h2>Горячие линии</h2>
+      <div class="hl-cards" id="hotlines"></div>
+    </div>
+  </div>
+</section>
+
+<div id="site-bottom"></div>
+
+<script src="assets/content.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
